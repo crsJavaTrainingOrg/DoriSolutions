@@ -9,7 +9,7 @@ public class Main {
         playSong(violin, song);
 
         Instrument distortedGuitar = new DistortedGuitar("Ibanez");
-        //violin.play(song);
+        //distortedGuitar.play(song);
         playSong(distortedGuitar, song);
     }
 
