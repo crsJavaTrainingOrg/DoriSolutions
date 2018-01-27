@@ -4,8 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
         PasswordChecker passwordChecker = new PasswordChecker();
+
+
         boolean result0 = passwordChecker.check(new char[]{'a', 'b', 'c', 'd', 'e'});
-        if (result0 != false) {
+        if (result0 == true) {
             System.out.println("Result 0 should be false because it's too short");
         } else {
             System.out.println("Result 0 is OK");
@@ -26,7 +28,7 @@ public class Main {
             System.out.println("Result 2 is OK");
         }
 
-        boolean result3 = passwordChecker.check(new char[]{'a', 'b', 'c', 'd', 'e', '@'}) == true;
+        boolean result3 = passwordChecker.check(new char[]{'a', 'b', 'c', 'd', 'e', '@'});
         if (result3) {
             System.out.println("Result 3 is OK");
         } else {

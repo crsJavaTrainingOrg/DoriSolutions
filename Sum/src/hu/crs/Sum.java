@@ -1,7 +1,7 @@
 package hu.crs;
 
 public class Sum {
-    public static int sum1(int first, int last) {
+    public static int sum1(final int first, final int last) {
         int sum = 0;
         int i = first;
         while (i <= last) {
